@@ -17,6 +17,8 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "test": "NODE_OPTIONS=\"--experimental-vm-modules --experimental-specifier-resolution=node\"  jest"
+    "build": "tsc --build",
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules --experimental-specifier-resolution=node\"  jest -c jest.config.ts",
+    "test:js": "NODE_OPTIONS=\"--experimental-vm-modules\"  jest -c jest.config.js"
   }
 }
